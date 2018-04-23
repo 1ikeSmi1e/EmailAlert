@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EmailInputAlertView.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)send:(id)sender {
+    
+    [EmailInputAlertView showWithSendbtnClick:^(NSString *email) {
+        NSLog(@"发送成功");
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -13,6 +13,12 @@
 		8447AEA7208DCE1C003E27F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8447AEA6208DCE1C003E27F9 /* Assets.xcassets */; };
 		8447AEAA208DCE1C003E27F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8447AEA8208DCE1C003E27F9 /* LaunchScreen.storyboard */; };
 		8447AEAD208DCE1C003E27F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEAC208DCE1C003E27F9 /* main.m */; };
+		8447AEB5208DCE2C003E27F9 /* EmailInputAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEB4208DCE2C003E27F9 /* EmailInputAlertView.m */; };
+		8447AEB8208DCE72003E27F9 /* MyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEB6208DCE72003E27F9 /* MyTools.m */; };
+		8447AEBC208DCEED003E27F9 /* UIView+AJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEBB208DCEED003E27F9 /* UIView+AJ.m */; };
+		8447AEBF208DD039003E27F9 /* UIColor+custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEBE208DD039003E27F9 /* UIColor+custom.m */; };
+		8447AEC2208DD636003E27F9 /* UIButton+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEC0208DD635003E27F9 /* UIButton+Custom.m */; };
+		8447AEC5208DD658003E27F9 /* UIImage+AJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447AEC3208DD658003E27F9 /* UIImage+AJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,19 @@
 		8447AEA9208DCE1C003E27F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8447AEAB208DCE1C003E27F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8447AEAC208DCE1C003E27F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8447AEB3208DCE2C003E27F9 /* EmailInputAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailInputAlertView.h; sourceTree = "<group>"; };
+		8447AEB4208DCE2C003E27F9 /* EmailInputAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailInputAlertView.m; sourceTree = "<group>"; };
+		8447AEB6208DCE72003E27F9 /* MyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTools.m; sourceTree = "<group>"; };
+		8447AEB7208DCE72003E27F9 /* MyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTools.h; sourceTree = "<group>"; };
+		8447AEB9208DCEA4003E27F9 /* AJSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJSingleton.h; sourceTree = "<group>"; };
+		8447AEBA208DCEED003E27F9 /* UIView+AJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AJ.h"; sourceTree = "<group>"; };
+		8447AEBB208DCEED003E27F9 /* UIView+AJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AJ.m"; sourceTree = "<group>"; };
+		8447AEBD208DD039003E27F9 /* UIColor+custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+custom.h"; sourceTree = "<group>"; };
+		8447AEBE208DD039003E27F9 /* UIColor+custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+custom.m"; sourceTree = "<group>"; };
+		8447AEC0208DD635003E27F9 /* UIButton+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Custom.m"; sourceTree = "<group>"; };
+		8447AEC1208DD636003E27F9 /* UIButton+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Custom.h"; sourceTree = "<group>"; };
+		8447AEC3208DD658003E27F9 /* UIImage+AJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AJ.m"; sourceTree = "<group>"; };
+		8447AEC4208DD658003E27F9 /* UIImage+AJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AJ.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +77,11 @@
 		8447AE9C208DCE1B003E27F9 /* EmailAlert */ = {
 			isa = PBXGroup;
 			children = (
+				8447AEC6208DD74D003E27F9 /* BaseClasses */,
 				8447AE9D208DCE1B003E27F9 /* AppDelegate.h */,
 				8447AE9E208DCE1B003E27F9 /* AppDelegate.m */,
+				8447AEB3208DCE2C003E27F9 /* EmailInputAlertView.h */,
+				8447AEB4208DCE2C003E27F9 /* EmailInputAlertView.m */,
 				8447AEA0208DCE1B003E27F9 /* ViewController.h */,
 				8447AEA1208DCE1B003E27F9 /* ViewController.m */,
 				8447AEA3208DCE1B003E27F9 /* Main.storyboard */,
@@ -69,6 +91,24 @@
 				8447AEAC208DCE1C003E27F9 /* main.m */,
 			);
 			path = EmailAlert;
+			sourceTree = "<group>";
+		};
+		8447AEC6208DD74D003E27F9 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8447AEB7208DCE72003E27F9 /* MyTools.h */,
+				8447AEB6208DCE72003E27F9 /* MyTools.m */,
+				8447AEBA208DCEED003E27F9 /* UIView+AJ.h */,
+				8447AEBB208DCEED003E27F9 /* UIView+AJ.m */,
+				8447AEC4208DD658003E27F9 /* UIImage+AJ.h */,
+				8447AEC3208DD658003E27F9 /* UIImage+AJ.m */,
+				8447AEC1208DD636003E27F9 /* UIButton+Custom.h */,
+				8447AEC0208DD635003E27F9 /* UIButton+Custom.m */,
+				8447AEBD208DD039003E27F9 /* UIColor+custom.h */,
+				8447AEBE208DD039003E27F9 /* UIColor+custom.m */,
+				8447AEB9208DCEA4003E27F9 /* AJSingleton.h */,
+			);
+			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +182,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8447AEA2208DCE1B003E27F9 /* ViewController.m in Sources */,
+				8447AEC5208DD658003E27F9 /* UIImage+AJ.m in Sources */,
+				8447AEBC208DCEED003E27F9 /* UIView+AJ.m in Sources */,
+				8447AEB8208DCE72003E27F9 /* MyTools.m in Sources */,
 				8447AEAD208DCE1C003E27F9 /* main.m in Sources */,
+				8447AEC2208DD636003E27F9 /* UIButton+Custom.m in Sources */,
 				8447AE9F208DCE1B003E27F9 /* AppDelegate.m in Sources */,
+				8447AEB5208DCE2C003E27F9 /* EmailInputAlertView.m in Sources */,
+				8447AEBF208DD039003E27F9 /* UIColor+custom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
